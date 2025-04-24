@@ -1,11 +1,47 @@
 body {
-    /* Three ways to use primary (accent) color */
-    color: env(-opera-gx-accent-color);
-    /*color: rgb(env(-opera-gx-accent-color-r), env(-opera-gx-accent-color-g), env(-opera-gx-accent-color-b));*/
-    /*color: hsl(env(-opera-gx-accent-color-h), env(-opera-gx-accent-color-s), env(-opera-gx-accent-color-l));*/
+    /* Primary (accent) color for text */
+    color: rgb(env(-opera-gx-accent-color-r), env(-opera-gx-accent-color-g), env(-opera-gx-accent-color-b));
+    
+    /* Secondary (background) color for the body */
+    background: rgb(env(-opera-gx-background-color-r), env(-opera-gx-background-color-g), env(-opera-gx-background-color-b));
+}
 
-    /* Three ways to use secondary (background) color */
-    background: env(-opera-gx-background-color);
-    /*background: rgb(env(-opera-gx-background-color-r), env(-opera-gx-background-color-g), env(-opera-gx-background-color-b));*/
-    /*background: hsl(env(-opera-gx-background-color-h), env(-opera-gx-background-color-s), env(-opera-gx-background-color-l));*/
+/* General styling for links */
+a {
+    color: rgb(env(-opera-gx-accent-color-r), env(-opera-gx-accent-color-g), env(-opera-gx-accent-color-b));
+}
+
+/* Hover effect for links */
+a:hover {
+    color: hsl(env(-opera-gx-accent-color-h), env(-opera-gx-accent-color-s), env(-opera-gx-accent-color-l));
+}
+
+/* Dark mode for buttons */
+button, input, select, textarea {
+    background: rgb(env(-opera-gx-background-color-r), env(-opera-gx-background-color-g), env(-opera-gx-background-color-b));
+    color: env(-opera-gx-accent-color);
+    border: 1px solid hsl(env(-opera-gx-accent-color-h), env(-opera-gx-accent-color-s), env(-opera-gx-accent-color-l));
+}
+
+/* Styling for text inside containers */
+header, footer, nav, section {
+    background: hsl(env(-opera-gx-background-color-h), env(-opera-gx-background-color-s), env(-opera-gx-background-color-l));
+    color: env(-opera-gx-accent-color);
+}
+
+/* Table styling for dark mode */
+table {
+    background: rgb(env(-opera-gx-background-color-r), env(-opera-gx-background-color-g), env(-opera-gx-background-color-b));
+    color: hsl(env(-opera-gx-accent-color-h), env(-opera-gx-accent-color-s), env(-opera-gx-accent-color-l));
+    border: 1px solid hsl(env(-opera-gx-accent-color-h), env(-opera-gx-accent-color-s), env(-opera-gx-accent-color-l));
+}
+
+/* Table cell styling */
+th, td {
+    border: 1px solid hsl(env(-opera-gx-accent-color-h), env(-opera-gx-accent-color-s), env(-opera-gx-accent-color-l));
+}
+
+/* Image brightness adjustment for dark mode */
+img {
+    filter: brightness(0.75);
 }

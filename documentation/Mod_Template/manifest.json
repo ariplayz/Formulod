@@ -1,9 +1,9 @@
 {
-    "name": "MOD NAME GOES HERE",
-    "description": "MOD DESCRIPTION GOES HERE",
+    "name": "F1/Red Bull",
+    "description": "For Red Bull/F1 fans.",
     "developer":
     {
-        "name": "DEVELOPER NAME GOES HERE"
+        "name": "Ari Cummings"
     },
     "icons":
     {
@@ -17,10 +17,10 @@
         {
             "background_music":
             [
-                "music/track_1.mp3",
-                "music/track_2.mp3",
-                "music/track_3.mp3",
-                "music/track_4.mp3"
+                "music/layer1.mp3",
+                "music/layer2.mp3",
+                "music/layer3.mp3",
+                "music/layer4.mp3"
             ],
             "browser_sounds":
             {
@@ -107,7 +107,7 @@
                     ],
                     "matches":
                     [
-                        "https://*.opera.com/*"
+                        "https://*.com/*"
                     ]
                 }
             ],
@@ -164,14 +164,15 @@
             {
                 "dark":
                 {   
-                    "image": "wallpaper/dark.png",
+                    "image": "wallpaper/video.webm",
+                    "first_frame": "wallpaper/first_frame.jpg",
                     "text_color": "#FFFFFF",
                     "text_shadow": "#757575"
                 },
                 "light":
                 {
                     "image": "wallpaper/video.webm",
-                    "first_frame": "wallpaper/first_frame.jpeg",
+                    "first_frame": "wallpaper/first_frame.jpg",
                     "text_color": "#FFFFFF",
                     "text_shadow": "#0B000E"
                 }

@@ -1,0 +1,44 @@
+/* main.theme.css - Additional theme configurations for Opera GX mod */
+
+:root {
+  --primary-bg-color: #121212;
+  --secondary-bg-color: #1e1e1e;
+  --primary-text-color: #e0e0e0;
+  --link-color: #bb86fc;
+  --link-hover-color: #3700b3;
+  --border-color: #333333;
+
+  /* Additional custom properties */
+  --button-bg: var(--secondary-bg-color);
+  --button-text: var(--primary-text-color);
+}
+
+body {
+  background-color: var(--primary-bg-color) !important;
+  color: var(--primary-text-color) !important;
+}
+
+a {
+  color: var(--link-color) !important;
+}
+
+a:hover {
+  color: var(--link-hover-color) !important;
+}
+
+button, input, select, textarea {
+  background-color: var(--button-bg) !important;
+  color: var(--button-text) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+header, footer, nav, section {
+  background-color: var(--secondary-bg-color) !important;
+  color: var(--primary-text-color) !important;
+}
+
+table, th, td {
+  background-color: var(--secondary-bg-color) !important;
+  color: var(--primary-text-color) !important;
+  border: 1px solid var(--border-color) !important;
+}
